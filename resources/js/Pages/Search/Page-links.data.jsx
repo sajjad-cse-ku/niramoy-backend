@@ -1,0 +1,14 @@
+// import { routes } from '@/config/routes';
+// import { DUMMY_ID } from '@/config/constants';
+
+// Note: do not add href in the label object, it is rendering as label
+export const pageLinks = [
+    // label start
+    {
+        name: 'Home',
+    },
+    {
+        name: 'Trendy OTP Page',
+        href: "#",
+    },
+];
