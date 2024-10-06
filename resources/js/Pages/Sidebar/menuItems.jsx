@@ -53,22 +53,15 @@ import CrmDashIcon from '../Icons/crmIcon.jsx';
 // // Note: do not add href in the label object, it is rendering as label
 export const menuItems = [
     // label start
-    {
-        name: 'Overview',
-    },
+    // {
+    //     name: 'Dashboard',
+    // },
     // label end
     {
-        name: 'File Manager',
+        name: 'Dashboard',
         href: '/',
         icon: <PiFolder />,
     },
-
-
-    // label start
-    {
-        name: 'Apps Kiteee',
-    },
-    // label end
     {
         name: 'E-Commerce',
         href: '#',
