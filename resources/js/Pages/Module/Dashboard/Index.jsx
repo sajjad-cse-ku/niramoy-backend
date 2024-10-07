@@ -24,28 +24,21 @@ const Index = () => {
                 <WelcomeBanner
                     title={
                         <>
-                            Good Morning, <br/> Cameron{' '}
-                            <HandWaveIcon className="inline-flex h-8 w-8"/>
+                            Good Morning, <br /> Cameron{' '}
+                            <HandWaveIcon className="inline-flex h-8 w-8" />
                         </>
                     }
                     description={
                         'Here’s What happening on your store today. See the statistics at once.'
                     }
                     media={
-                        <div
-                            className="absolute -bottom-6 end-4 hidden w-[300px] @2xl:block lg:w-[320px] 2xl:-bottom-7 2xl:w-[330px]">
+                        <div className="absolute -bottom-6 end-4 hidden w-[300px] @2xl:block lg:w-[320px] 2xl:-bottom-7 2xl:w-[330px]">
                             <div className="relative">
-                                {/*<Image*/}
-                                {/*    src={welcomeImg}*/}
-                                {/*    alt="Welcome shop image form freepik"*/}
-                                {/*    className="dark:brightness-95 dark:drop-shadow-md"*/}
-                                {/*/>*/}
-                                title={
-                                <>
-                                    Good Morning, <br/> Cameron{' '}
-                                    <HandWaveIcon className="inline-flex h-8 w-8"/>
-                                </>
-                            }
+                                <img
+                                    src="/frontend/shop-illustration.png"
+                                    alt="Welcome shop image form freepik"
+                                    className="dark:brightness-95 dark:drop-shadow-md"
+                                />
                             </div>
                         </div>
                     }
@@ -54,29 +47,29 @@ const Index = () => {
                 >
                     <Link href={routes.eCommerce.createProduct} className="inline-flex">
                         <Button as="span" className="h-[38px] shadow md:h-10">
-                            <PiPlusBold className="me-1 h-4 w-4"/> Add Product
+                            <PiPlusBold className="me-1 h-4 w-4" /> Add Product
                         </Button>
                     </Link>
                 </WelcomeBanner>
 
                 <StatCards className="@2xl:grid-cols-3 @3xl:gap-6 @4xl:col-span-2 @7xl:col-span-8"/>
-                <ProfitWidget
-                    className="h-[464px] @sm:h-[520px] @7xl:col-span-4 @7xl:col-start-9 @7xl:row-start-1 @7xl:row-end-3 @7xl:h-full"/>
+                {/*<ProfitWidget*/}
+                {/*    className="h-[464px] @sm:h-[520px] @7xl:col-span-4 @7xl:col-start-9 @7xl:row-start-1 @7xl:row-end-3 @7xl:h-full"/>*/}
 
-                <SalesReport className="@4xl:col-span-2 @7xl:col-span-8"/>
+                {/*<SalesReport className="@4xl:col-span-2 @7xl:col-span-8"/>*/}
 
-                <PromotionalSales
-                    className="@4xl:col-start-2 @4xl:row-start-3 @7xl:col-span-4 @7xl:col-start-auto @7xl:row-start-auto"/>
+                {/*<PromotionalSales*/}
+                {/*    className="@4xl:col-start-2 @4xl:row-start-3 @7xl:col-span-4 @7xl:col-start-auto @7xl:row-start-auto"/>*/}
 
-                <RecentOrder className="relative @4xl:col-span-2 @7xl:col-span-12"/>
+                {/*<RecentOrder className="relative @4xl:col-span-2 @7xl:col-span-12"/>*/}
 
-                <RepeatCustomerRate className="@4xl:col-span-2 @7xl:col-span-12 @[90rem]:col-span-8"/>
+                {/*<RepeatCustomerRate className="@4xl:col-span-2 @7xl:col-span-12 @[90rem]:col-span-8"/>*/}
 
-                <BestSellers className="@7xl:col-span-6 @[90rem]:col-span-4"/>
+                {/*<BestSellers className="@7xl:col-span-6 @[90rem]:col-span-4"/>*/}
 
-                <UserLocation className="@7xl:col-span-6 @[90rem]:col-span-5 @[112rem]:col-span-4"/>
+                {/*<UserLocation className="@7xl:col-span-6 @[90rem]:col-span-5 @[112rem]:col-span-4"/>*/}
 
-                <StockReport className="@4xl:col-span-2 @7xl:col-span-12 @[90rem]:col-span-7 @[112rem]:col-span-8"/>
+                {/*<StockReport className="@4xl:col-span-2 @7xl:col-span-12 @[90rem]:col-span-7 @[112rem]:col-span-8"/>*/}
             </div>
         </div>
     )

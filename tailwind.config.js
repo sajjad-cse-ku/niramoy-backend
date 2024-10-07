@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
+
+import plugin from "tailwindcss";
+import forms from "@tailwindcss/forms";
+import contentQueries from "@tailwindcss/container-queries";
+
 export default {
     content: [
         "./resources/**/*.blade.php",
@@ -137,12 +143,12 @@ export default {
         },
     },
     plugins: [
-        // // require("@tailwindcss/forms"),
-        // // require("@tailwindcss/container-queries"),
-        // // Custom plugin
-        // plugin(({ addVariant }) => {
-        //     addVariant("not-read-only", "&:not(:read-only)");
-        // }),
+        forms,
+        contentQueries,
+        // @ts-ignore
+        plugin(({ addVariant }) => {
+            addVariant("not-read-only", "&:not(:read-only)");
+        }),
     ],
     variants: {
         extend: {},
